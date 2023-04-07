@@ -15,6 +15,7 @@ public class CatBox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Input.backButtonLeavesApp = true;
         field.text = PlayerPrefs.GetString(savename, "");
         slider.value = PlayerPrefs.GetInt(savename, 10);
     }
@@ -28,10 +29,12 @@ public class CatBox : MonoBehaviour
     public void SetSlider()
     {
         PlayerPrefs.SetInt(savename, (int)slider.value);
+        Avarage.me.ResetAverage();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
+        Application.targetFrameRate = 60;
         var temp = (float)(slider.value / 4);
         value.text = temp.ToString();
     }

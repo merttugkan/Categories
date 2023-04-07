@@ -16,7 +16,7 @@ PlayerSettings:
   productName: Allstars
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.254717, g: 0.24150054, b: 0.24480467, a: 1}
+  m_SplashScreenBackgroundColor: {r: 0.21568629, g: 0.21568629, b: 0.21568629, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
